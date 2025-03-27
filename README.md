@@ -1,6 +1,6 @@
 # DISCORD-BOT
 Simple Discord Bot
 
-**Message Handling 
+**Message Handling**
 
 - Deletes messages in a channel after a certain time frame.
