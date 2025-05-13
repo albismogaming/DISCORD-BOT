@@ -1,8 +1,11 @@
 # DISCORD-BOT
 
-**Message Handling**
+**Updated Discord Bot w/ Functionality**
+Add some new features to the discord bot 
+1. Created a cogs folder that will store the bot commands.
+2. Created a utils folder for wrapper functions and other utilities items to help with the commands.
 
-- Deletes messages in a channel after a certain time frame.
+Users will have to create a data file that has TOKEN and CHANNEL_ID variables. 
 
 **House Keeping Items**
 1. Visit Discord Developer Portal Website
