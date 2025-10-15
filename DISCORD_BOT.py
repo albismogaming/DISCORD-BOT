@@ -5,12 +5,21 @@ import asyncio
 from data import TOKEN
 
 intents = discord.Intents.default()
-intents.message_content = True
+intents.message_content = True  # Required for reading messages (if needed)
+intents.members = True          # Enable member events
+intents.guilds = True           # Usually already enabled
 bot = commands.Bot(command_prefix="!", intents=intents)
 
 @bot.event
 async def on_ready():
-    print(f"BOT IS ONLINE AS {bot.user.name.upper()}")
+    print(f"✅ Logged in as {bot.user} (ID: {bot.user.id})")
+
+    try:
+        # 🔹 Register commands only after bot is ready
+        synced = await bot.tree.sync()
+        print(f"🌐 Synced {len(synced)} global command(s).")
+    except Exception as e:
+        print(f"⚠️ Failed to sync app commands: {e}")
 
 # ✅ Automatically load all .py files in the /cogs folder
 async def load_extensions():
