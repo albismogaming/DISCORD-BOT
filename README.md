@@ -19,6 +19,6 @@ Users will have to create a data file that has TOKEN and CHANNEL_ID variables.
   - Scroll down and find *"OAuth2 URL Generator"*
   - Find *"bot"* and toggle on
   - Under **BOT PERMISSIONS** toggle the following:
-  ["Manage Messages", "Manage Channels", "Manage Events", "View Channels"]
+  ["Manage Messages", "Manage Channels", "Manage Events", "View Channels", "Slash Commands"]
 6. Copy Generated URL and Invite Bot to Discord Channel
 7. Sit back, relax and run the script! 😎
